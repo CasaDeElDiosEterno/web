@@ -1,19 +1,12 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recordatorio de Oración</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            margin: 0;
-            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            flex-direction: column;
+        }
+        img {
+            width: 100px; 
+            height: 100px;
         }
         .container {
             background-color: #ffffff;
@@ -54,13 +47,17 @@
             .time {
                 font-size: 1.2em;
             }
+            .logo img {
+                width: 50px; /* Tamaño máximo ajustado para pantallas pequeñas */
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Recordatorio de Oración</h1>
-        <p>Querida comunidad:</p>
+        <img src="logo2.png" alt="Logo de la Oración">
+        <h1>Gentil Recordatorio Sábado Oración Matutina</h1>
+        <p>Queridos Hermanos</p>
         <p>Este sábado, tendremos una sesión especial de oración.</p>
         <p class="time">De 6:00 AM a 7:00 AM</p>
         <p>Te invitamos a unirte a nosotros para este momento de reflexión y espiritualidad.</p>
