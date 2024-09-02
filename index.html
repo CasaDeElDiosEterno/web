@@ -7,52 +7,64 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f0f8ff;
-            margin: 0; /* Elimina el margen por defecto */
+            background-color: #f5f5f5;
+            margin: 0;
             padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
         .container {
+            background-color: #ffffff;
             padding: 20px;
-            max-width: 600px;
-            margin: 20px; /* Ajusta el margen para que sea adecuado en móviles */
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            box-sizing: border-box; /* Asegura que el padding no aumente el ancho total */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 100%;
+            width: 90%;
+            margin: 10px;
         }
         h1 {
-            color: #4CAF50;
-            font-size: 24px; /* Ajusta el tamaño de fuente del encabezado */
-            margin-bottom: 20px;
+            color: #2c3e50;
+            font-size: 1.5em;
         }
         p {
-            font-size: 16px; /* Ajusta el tamaño de fuente del texto */
-            line-height: 1.6;
-            margin: 10px 0; /* Ajusta los márgenes de los párrafos */
+            color: #34495e;
+            font-size: 1em;
         }
-        .highlight {
-            color: #FF5722;
+        .time {
+            font-size: 1.5em;
             font-weight: bold;
+            color: #e74c3c;
         }
         .footer {
             margin-top: 20px;
-            font-size: 14px;
-            color: #888;
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+        /* Estilos para pantallas pequeñas */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.2em;
+            }
+            p {
+                font-size: 0.9em;
+            }
+            .time {
+                font-size: 1.2em;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>GENTIL RECORDATORIO SÁBADO ORACIÓN MATUTINA</h1>
-        <p>Queridos hermanos,</p>
-        <p>Este es un recordatorio amable para dedicar un momento especial para la <span class="highlight">oración diaria</span> hoy.</p>
-        <p>Recuerda que la oración es una forma poderosa de conectar con tu espíritu y encontrar paz interior. Tómate unos minutos para reflexionar y agradecer por las bendiciones que tienes.</p>
-        <p>Si tienes alguna intención especial, no dudes en mencionarla durante tu momento de oración.</p>
-        <p>¡Que tengas un día lleno de paz y bendiciones!</p>
-        <div class="footer">
-            <p>&copy; 2024 Casa de el Dios Eterno</p>
-        </div>
+        <h1>Recordatorio de Oración</h1>
+        <p>Querida comunidad:</p>
+        <p>Este sábado, tendremos una sesión especial de oración.</p>
+        <p class="time">De 6:00 AM a 7:00 AM</p>
+        <p>Te invitamos a unirte a nosotros para este momento de reflexión y espiritualidad.</p>
+        <p class="footer">¡Esperamos verte allí!</p>
     </div>
 </body>
 </html>
