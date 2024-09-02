@@ -9,23 +9,27 @@
             font-family: Arial, sans-serif;
             text-align: center;
             background-color: #f0f8ff;
-            margin: 100px;
+            margin: 0; /* Elimina el margen por defecto */
             padding: 0;
         }
         .container {
             padding: 20px;
             max-width: 600px;
-            margin: auto;
+            margin: 20px; /* Ajusta el margen para que sea adecuado en móviles */
             background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box; /* Asegura que el padding no aumente el ancho total */
         }
         h1 {
             color: #4CAF50;
+            font-size: 24px; /* Ajusta el tamaño de fuente del encabezado */
+            margin-bottom: 20px;
         }
         p {
-            font-size: 18px;
+            font-size: 16px; /* Ajusta el tamaño de fuente del texto */
             line-height: 1.6;
+            margin: 10px 0; /* Ajusta los márgenes de los párrafos */
         }
         .highlight {
             color: #FF5722;
