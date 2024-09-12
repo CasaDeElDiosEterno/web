@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuncio de Oración Religiosa</title>
+    <style>
+        body {
+            font-family: 'Verdana', sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 700px;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            animation: slideIn 1s ease-out;
+        }
+
+        .logo {
+            width: 100px;
+            height: auto;
+            margin: 0 auto 20px;
+            animation: fadeIn 2s ease-in;
+        }
+
+        h1 {
+            font-size: 1.8em;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            animation: fadeIn 2s ease-in;
+        }
+
+        .date-time {
+            font-size: 1.1em;
+            color: black;
+            margin-bottom: 15px;
+        }
+
+        .details {
+            font-size: 1em;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+        }
+
+        .message {
+            font-size: 1.1em;
+            color: #34495e;
+            font-style: italic;
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 2px solid #2980b9;
+            border-radius: 10px;
+            background-color: #ecf0f1;
+            animation: pulse 2s infinite;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #fff;
+            background: #2980b9;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .button:hover {
+            background: #1f618d;
+            transform: scale(1.05);
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
+            }
+            50% {
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            }
+            100% {
+                box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .logo {
+                width: 80px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .date-time, .details, .message {
+                font-size: 0.9em;
+            }
+
+            .button {
+                padding: 8px 15px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logoLeandro.jpg" alt="Logo" class="logo">
+        <h1>Oración Matutina</h1>
+        <p class="date-time">Queridos hermanos y hermanas,<br><br>Sábado, 14 de Septiembre, 2024 a las 6:00am - 7:00am</p>
+        <p class="details">Les animamos a unirse a nosotros en este tiempo de oración, para fortalecer nuestra fe y comunidad. A través de la oración, las personas pueden reflexionar sobre sus vidas, sus acciones y sus metas.</p>
+        <div class="message">
+            <p><strong>Versículo del Día:</strong></p>
+            <p>“No se inquieten por nada, más bien, en toda ocasión, con oración y ruego, presenten sus peticiones a Dios y denle gracias.”</p>
+            <p>- Filipenses 4:6</p>
+        </div>
+        <a href="#" class="button">¡Esperamos verlos a todos!</a>
+    </div>
+</body>
+</html>
