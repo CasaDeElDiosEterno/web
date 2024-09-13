@@ -3,84 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recordatorio de Oración</title>
+    <title>Anuncio de Oración Religiosa</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
+            font-family: 'Verdana', sans-serif;
+            background: #f4f4f4;
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
-            flex-direction: column;
+            height: 100vh;
         }
-        img {
-            width: 100px; 
-            height: 100px;
-        }
+
         .container {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            max-width: 100%;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             width: 90%;
-            margin: 10px;
+            max-width: 700px;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            animation: slideIn 1s ease-out;
         }
+
+        .logo {
+            width: 100px;
+            height: auto;
+            margin: 0 auto 20px;
+            animation: fadeIn 2s ease-in;
+        }
+
         h1 {
+            font-size: 1.8em;
             color: #2c3e50;
-            font-size: 1.5em;
+            margin-bottom: 15px;
+            animation: fadeIn 2s ease-in;
         }
-        p {
-            color: #34495e;
+
+        .date-time {
+            font-size: 1.1em;
+            color: black;
+            margin-bottom: 15px;
+        }
+
+        .details {
             font-size: 1em;
-        }
-        .time {
-            font-size: 1.5em;
-            font-weight: bold;
-            color: #e74c3c;
-        }
-        .versiculo{
-            font-size: 0.9em;
-            color: #34495e;
-        }
-        .footer {
-            margin-top: 20px;
-            font-size: 0.9em;
             color: #7f8c8d;
+            margin-bottom: 20px;
         }
-        /* Estilos para pantallas pequeñas */
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 1.2em;
+
+        .message {
+            font-size: 1.1em;
+            color: #34495e;
+            font-style: italic;
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 2px solid #2980b9;
+            border-radius: 10px;
+            background-color: #ecf0f1;
+            animation: pulse 2s infinite;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #fff;
+            background: #2980b9;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .button:hover {
+            background: #1f618d;
+            transform: scale(1.05);
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
             }
-            p {
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
+            }
+            50% {
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            }
+            100% {
+                box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .logo {
+                width: 80px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .date-time, .details, .message {
                 font-size: 0.9em;
             }
-            .time {
-                font-size: 1.2em;
-            }
-            .logo img {
-                width: 50px; /* Tamaño máximo ajustado para pantallas pequeñas */
+
+            .button {
+                padding: 8px 15px;
+                font-size: 0.9em;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="logo2.png" alt="Logo de la Oración">
-        <h1>Gentil Recordatorio Sábado Oración Matutina</h1>
-        <p>Queridos Hermanos</p>
-        <p>Este sábado, tendremos una sesión especial de oración.</p>
-        <p class="time">De 6:00 AM a 7:00 AM</p>
-        <p>La oración es una forma de comunicarse con lo divino o con una fuerza superior. Permite 
-           a las personas expresar sus sentimientos, deseos y gratitud. A través de la oración, las 
-           personas pueden reflexionar sobre sus vidas, sus acciones y sus metas.</p>
-        <p class="versiculo">Mateo 26:41 <br> Velad y orad, para que no entréis en tentación; el espíritu a la verdad está dispuesto, pero la carne es débil.<br>Este versículo es un recordatorio poderoso de la necesidad de una vida de oración y vigilancia para enfrentar las tentaciones y permanecer fiel en tiempos de prueba.</p>
-        <p class="footer">¡Esperamos verte allí!</p>
+        <img src="logoLeandro.jpg" alt="Logo" class="logo">
+        <h1>Oración Matutina</h1>
+        <p class="date-time">Queridos hermanos y hermanas,<br><br>Sábado, 14 de Septiembre, 2024 a las 6:00am - 7:00am</p>
+        <p class="details">Les animamos a unirse a nosotros en este tiempo de oración, para fortalecer nuestra fe y comunidad. A través de la oración, las personas pueden reflexionar sobre sus vidas, sus acciones y sus metas.</p>
+        <div class="message">
+            <p><strong>Versículo del Día:</strong></p>
+            <p>“No se inquieten por nada, más bien, en toda ocasión, con oración y ruego, presenten sus peticiones a Dios y denle gracias.”</p>
+            <p>- Filipenses 4:6</p>
+        </div>
+        <a href="#" class="button">¡Esperamos verlos a todos!</a>
     </div>
 </body>
 </html>
